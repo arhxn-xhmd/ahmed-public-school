@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .maincontent {
+                margin-left: 30px;
+                width: calc(100% - 280px); 
+            }
+            p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: black;
+            }
+            .button1 {
+                border-radius: 50px;
+                background-color: red;
+                color: white;
+                border: 1px solid red;
+                margin-right: 20px;
+                padding: 10px 20px;
+                margin-top: 10px;}
+        </style>       
+    </head>
+    <body>
+        <script>
+            function searchbar () {
+                window.alert('No Results Found \nSorry, we couldn\'t find any results for your search. Please try using different keywords or check the spelling.')
+            }
+            function feedback() {
+                window.alert('Thanks for your feedback')
+            }
+        </script>
+        <div class="header">
+            <img src="https://static.vecteezy.com/system/resources/previews/046/393/433/non_2x/minimal-and-mordern-education-logo-illustration-black-and-white-free-vector.jpg"  alt="School Logo" class="image">
+            <div class="heading">
+                <h1>------------------------- Ahmed Public School -----------------------------------</h1>
+            </div>
+            <form>
+                <input type="search" placeholder="Search...">
+                <button onclick="searchbar()">Search</button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="quicklinks">
+                <div>
+                    <h2 style="color: white; text-align: left;">Quick Links</h2>
+                    <hr style="color:white;">
+                </div>
+                <div>
+                    <nav> 
+                        <ul>
+                            <li><a href="introduction.html">Introduction</a></li>
+                            <li><a href="history.html">School History & Vision</a></li>
+                            <li><a href="principal.html">Principal's Message</a></li>
+                            <li><a href="teachers.html">About Teachers</a></li>
+                            <li><a href="subjects.html">Subjects</a></li>
+                            <li><a href="fee.html">Fee Structure</a></li>
+                            <li><a href="rules.html">School Rules & Policies</a></li>
+                            <li><a href="activities.html">Co - curricular Activities</a></li>
+                            <li><a href="games.html">Sports and Games</a></li>
+                            <li><a href="payment.html">Fee Payment</a></li>
+                            <li><a href="admission.html">Admission Form</a></li>
+                            <li><a href="job.html">Work With Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>     
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="maincontent">
+                <div>
+                    <h1 style="font-size: 65px; text-align: left;">13. Contact Us</h1>
+                </div>
+                <div>
+                    <hr size="10" width="100%" color="red">
+                </div>
+                <div class="contact">
+                    <p><b>School Address : </b>123 Education Lane | Knowledge City | Springfield, IL 62704 | United States<br><br>
+                    <b>Phone No. : </b>+1 (555) 123-4567<br><br>
+                    <b>Email Address : </b>support@ahmedpublicschool.com<br><br>
+                    <b>Follow Us : </b><a href="https://www.instagram.com" target="_blank" style="color: rgb(59, 177, 250);text-decoration: underline;">Instagram</a> |
+                    <a href="https://www.facebook.com" target="_blank" style="color: rgb(59, 177, 250);text-decoration: underline;">Facebook</a> |
+                    <a href="https://www.twitter.com" target="_blank" style="color: rgb(59, 177, 250);text-decoration: underline;">Twitter</a><br><br>
+                    <b>Send Us a Message</b><br></p>
+                    <form>   
+                        <input type="text" placeholder="Name"><br>
+                        <input type="text" placeholder="Email"><br><br>
+                        <textarea rows="8" cols="100" placeholder="Enter your Message Here..."></textarea> 
+                    </form>
+                    <button class="button1" onclick="feedback()">Send</button>    
+                </div>
+               
+                <!--Here ends the main content-->
+                <div>
+                    <p style="text-align: center; font-weight: lighter;font-family: 'Times New Roman', Times, serif;">© 2025 Ahmed Public School. All rights reserved. We respect your privacy and are committed to protecting your personal data. For more details, please review our full privacy policy.</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>  

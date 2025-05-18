@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Work with us</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .maincontent {
+                margin-left: 30px;
+                width: calc(100% - 280px); 
+            }
+            .button1 {
+                border-radius: 50px;
+                background-color: red;
+                color: white;
+                border: 1px solid red;
+                margin-right: 20px;
+                padding: 10px 20px;
+                margin-top: 10px;
+            }
+            .button2 {
+                border-radius: 50px;
+                background-color: white;
+                color : red;
+                border: 1px solid red;
+                padding: 10px 20px;
+                margin-top: 10px;
+            }
+            .formfont {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .formrules {
+                display: flex;
+            }
+            .instructions {
+                margin-left: 10px;
+            }
+            .feeimage {
+                margin-left: 250px;
+                width: 200px;
+            }
+            ol {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            input[type="text"]{
+                width : 220px
+            }
+        </style>       
+    </head>
+    <body>
+        <script>
+            function searchbar () {
+                window.alert('No Results Found \nSorry, we couldn\'t find any results for your search. Please try using different keywords or check the spelling.')
+            }
+            function payfees () {
+                window.alert('Thank You for Submitting the Admission Form!\nWe have successfully received your application for admission to Ahmed Public School.')
+                document.getElementById('name').value = '';
+                document.getElementById('grade').value = '';
+                document.getElementById('id').value = '';
+                document.getElementById('number').value = '';
+                document.getElementById('account').value = '';
+                document.getElementById('amount').value = '';
+            }
+            function printform() {
+                window.print()
+            }
+        </script>
+        <div class="header">
+            <img src="https://static.vecteezy.com/system/resources/previews/046/393/433/non_2x/minimal-and-mordern-education-logo-illustration-black-and-white-free-vector.jpg"  alt="School Logo" class="image">
+            <div class="heading">
+                <h1>------------------------- Ahmed Public School -----------------------------------</h1>
+            </div>
+            <form>
+                <input type="search" placeholder="Search...">
+                <button onclick="searchbar()">Search</button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="quicklinks">
+                <div>
+                    <h2 style="color: white; text-align: left;">Quick Links</h2>
+                    <hr style="color:white;">
+                </div>
+                <div>
+                    <nav> 
+                        <ul>
+                            <li><a href="introduction.html">Introduction</a></li>
+                            <li><a href="history.html">School History & Vision</a></li>
+                            <li><a href="principal.html">Principal's Message</a></li>
+                            <li><a href="teachers.html">About Teachers</a></li>
+                            <li><a href="subjects.html">Subjects</a></li>
+                            <li><a href="fee.html">Fee Structure</a></li>
+                            <li><a href="rules.html">School Rules & Policies</a></li>
+                            <li><a href="activities.html">Co - curricular Activities</a></li>
+                            <li><a href="games.html">Sports and Games</a></li>
+                            <li><a href="payment.html">Fee Payment</a></li>
+                            <li><a href="admission.html">Admission Form</a></li>
+                            <li><a href="job.html">Work With Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>     
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="maincontent">
+                <div>
+                    <h1 style="font-size: 65px; text-align: left;">12. Work With Us</h1>
+                </div>
+                <div>
+                    <hr size="10" width="100%" color="red">
+                </div>
+                <div class="formrules">
+                    <div>
+                        <form class="formfont">
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" placeholder="First Name">
+                            <input type="text" id="name" name="name" placeholder="Last Name (Optional)"><br><br>
+                            <label>Gender</label><br>
+                            <input type="radio" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                            <input type="radio" name="gender" value="other"> Other <br><br>
+                            <label for="email">Email Id</label>
+                            <input type="text" id="email" name="email" placeholder="john.doe@example.com"><br>
+                            <label for="number">Contact Number : </label>
+                            <input type="int" id="number" name="number" placeholder="XXXXXXXXXX"><br><br>       
+                            <label for="degree">Degree(s)</label>
+                            <input type="text" id="degree" name="degree" placeholder="Master/bachelor/PHD"><br>
+                            <label for="study">Field of Study : </label>
+                            <input type="text" id="study" name="study" placeholder="Subjects"><br>
+                            <label for="address">College : </label>
+                            <input type="text" id="address" name="address" placeholder="University/College"><br><br>
+                            <label for="dob">Graduation Date</label><br>
+                            <input type="int" id="dob" name="dob" placeholder="DD">
+                            <input type="int" id="dob" name="dob" placeholder="MM">
+                            <input type="int" id="dob" name="dob" placeholder="YYYY"><br><br>
+                            <label for="problem">Teaching Experience : </label>
+                            <input type="text" id="problem" name="problem" placeholder="Teaching Experience (in years)"><br>
+                            <label for="problem">Previous School : </label>
+                            <input type="text" id="problem" name="problem" placeholder="Previous School Name"><br>
+                            <label for="problem">Grade Level : </label>
+                            <input type="text" id="problem" name="problem" placeholder="Grade Level (Class)"><br>
+                        </form>
+                        <button class="button1" onclick="payfees()">Submit</button>
+                        <button class="button2" onclick="printform()">Print</button>
+                    </div>
+                </div>
+                
+                <!--Here ends the main content-->
+            </div>
+
+        </div>
+    </body>
+</html>  

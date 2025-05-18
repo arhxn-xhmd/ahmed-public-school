@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fee Payment</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .maincontent {
+                margin-left: 30px;
+                width: calc(100% - 280px); 
+            }
+            .button1 {
+                border-radius: 50px;
+                background-color: red;
+                color: white;
+                border: 1px solid red;
+                margin-right: 20px;
+                padding: 10px 20px;
+            }
+            .button2 {
+                border-radius: 50px;
+                background-color: white;
+                color : red;
+                border: 1px solid red;
+                padding: 10px 20px;
+            }
+            .formfont {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .formrules {
+                display: flex;
+            }
+            .instructions {
+                margin-left: 100px;
+            }
+            .feeimage {
+                margin-left: 250px;
+                width: 200px;
+            }
+            ol {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        </style>       
+    </head>
+    <body>
+        <script>
+            function searchbar () {
+                window.alert('No Results Found \nSorry, we couldn\'t find any results for your search. Please try using different keywords or check the spelling.')
+            }
+            function payfees () {
+                window.alert('Thank you for paying the fees.\nYour payment has been processed successfully.')
+                document.getElementById('name').value = '';
+                document.getElementById('grade').value = '';
+                document.getElementById('id').value = '';
+                document.getElementById('number').value = '';
+                document.getElementById('account').value = '';
+                document.getElementById('amount').value = '';
+            }
+            function printform() {
+                window.print()
+            }
+        </script>
+        <div class="header">
+            <img src="https://static.vecteezy.com/system/resources/previews/046/393/433/non_2x/minimal-and-mordern-education-logo-illustration-black-and-white-free-vector.jpg"  alt="School Logo" class="image">
+            <div class="heading">
+                <h1>------------------------- Ahmed Public School -----------------------------------</h1>
+            </div>
+            <form>
+                <input type="search" placeholder="Search...">
+                <button onclick="searchbar()">Search</button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="quicklinks">
+                <div>
+                    <h2 style="color: white; text-align: left;">Quick Links</h2>
+                    <hr style="color:white;">
+                </div>
+                <div>
+                    <nav> 
+                        <ul>
+                            <li><a href="introduction.html">Introduction</a></li>
+                            <li><a href="history.html">School History & Vision</a></li>
+                            <li><a href="principal.html">Principal's Message</a></li>
+                            <li><a href="teachers.html">About Teachers</a></li>
+                            <li><a href="subjects.html">Subjects</a></li>
+                            <li><a href="fee.html">Fee Structure</a></li>
+                            <li><a href="rules.html">School Rules & Policies</a></li>
+                            <li><a href="activities.html">Co - curricular Activities</a></li>
+                            <li><a href="games.html">Sports and Games</a></li>
+                            <li><a href="payment.html">Fee Payment</a></li>
+                            <li><a href="admission.html">Admission Form</a></li>
+                            <li><a href="job.html">Work With Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>     
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="maincontent">
+                <div>
+                    <h1 style="font-size: 65px; text-align: left;">10. Fee Payment</h1>
+                </div>
+                <div>
+                    <hr size="10" width="100%" color="red">
+                </div>
+                <div class="formrules">
+                    <div>
+                        <form class="formfont">
+                            <label for="name">Name of Student</label><br>
+                            <input type="text" id="name" name="name" placeholder="First Name">
+                            <input type="text" id="name" name="name" placeholder="Last Name (Optional)"><br><br>
+                            <label for="grade">Grade</label><br>
+                            <input type="text" id="grade" name="grade" placeholder="Class & Section"><br><br>
+                            <label for="id">Student's ID</label><br>
+                            <input type="text" id="id" name="id" placeholder="Contains letters & numbers"><br><br>
+                            <label for="number">Admission Number</label><br>
+                            <input type="int" id="number" name="number" placeholder="XXXXX"><br><br>
+                            <label for="account">Account Number</label><br>
+                            <input type="password" id="account" name="account" placeholder="Bank Account No."><br><br>
+                            <label for="amount">Amount</label><br>
+                            <input type="int" id="amount" name="amount" placeholder="Amount (in $)"><br><br><br>
+                        </form>
+                        <button class="button1" onclick="payfees()">Pay</button>
+                        <button class="button2" onclick="printform()">Print</button>
+                    </div>
+                    <div class="instructions">
+                        <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Payment Instructions</h3>
+                        <ol>
+                            <li>Enter the student's <b>First Name</b> and <b>Last Name</b> (optional).</li>
+                            <li>Provide the <b>Grade</b> (Class & Section).</li>
+                            <li>Fill in the <b>Student's ID</b> (contains letters and numbers).</li>
+                            <li>Provide the <b>Admission Number</b> (XXXXX format).</li>
+                            <li>Enter the <b>Bank Account Number</b> for payment processing.</li>
+                            <li>Specify the <b>Amount</b> to be paid (in dollars).</li>
+                            <li>Double-check all the details you've entered to ensure accuracy.</li>
+                            <li>Click the <b>Pay</b> button to complete the payment.</li>
+                            <li>A confirmation message will appear once the payment is successful.</li>
+                            <li>After payment, click the <b>Print</b> button to save or print the payment receipt.</li>   
+                        </ol>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgA1GOnYQOgVqd-9NqDNz58lTxPdLoCFXxJQ&s" class="feeimage">
+                    </div>
+                </div>
+                
+                <!--Here ends the main content-->
+            </div>
+
+        </div>
+    </body>
+</html>  

@@ -1,0 +1,64 @@
+.header {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+.image {
+    border-radius: 50px;
+    width: 100px; 
+    height: 100px; }
+
+.heading {
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: white;
+    padding: 10px;
+    margin: 0 20px; 
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+h1 {
+    margin: 0; 
+    text-align: center; 
+}
+
+.container {
+    display : flex;
+    margin-top: 20px;
+
+}
+
+.quicklinks {
+    background-color: red;
+    padding-left: 0;
+    border-radius: 20px; /* Add rounded corners */
+    width: 250px; /* Set a fixed width for the quick links section */
+    text-align: left;
+    border: 3px solid black;
+    margin : 0 ;
+}
+
+ul {
+    color: white;
+    font-size: x-large;
+    margin-right: 5px;
+}
+
+.maincontent {
+    margin-left: 30px;
+    width: calc(100% - 280px); 
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
