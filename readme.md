@@ -49,8 +49,9 @@ The website includes the following sections:
 
 - **HTML5**  
 - **CSS3**
+- **JavaScript**
 
-> This is a fully static website, built with only HTML and CSS.
+> This is a fully static website, built with only HTML, CSS and JavaScript.
 
 ## Getting Started 🚀
 
